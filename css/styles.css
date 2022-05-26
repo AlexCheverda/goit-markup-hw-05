@@ -314,6 +314,7 @@ p {
 }
 
 .modal-wrapper {
+    padding: 25px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -321,7 +322,7 @@ p {
     transform: translate(-50%, -50%);
     
     width: 528px;
-    height: 521px;
+    /* height: 521px; */
     background-color: #ffffff;
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -330,6 +331,110 @@ p {
                 
     transition: transform var(--animation), opacity var(--animation);           
 
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-title {
+    display: block;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-modal-label {
+    
+    display: block;
+    font-size: 14px;
+    align-items: left;
+}
+
+.form-modal-input {
+    width: 100%;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: 1px solid #2196F3;
+    outline: transparent;
+}
+
+.form-modal-icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    fill: #303030;
+}
+
+.error {
+    color: #188CE8;
+    opacity: 0;
+}
+
+.warning {
+    color: chocolate;
+    /* opacity: 0; */
+}
+
+.form-modal-input:focus~.warning {
+    opacity: 1;
+}
+
+.form-modal-input:invalid ~ .error {
+    opacity: 1;
+}
+
+.warning, .error {
+    position: absolute;
+    opacity: 0;
+    bottom: -30px;
+    left: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 90%;
+}
+
+.warning-icon, .error-icon {
+    display: inline-flex;
+}
+
+/* checkbox style */
+
+.form-policy-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.custom-checkbox {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 4px;
+    outline: 2px solid #2196F3;
+    outline-offset: -2px;
+}
+
+.custom-checkbox-icon {
+    opacity: 0;
+
+    transition: opacity 300ms ease-in;
+}
+
+.checkbox:checked+.custom-checkbox {
+    background-color: #2196f3;
+    opacity: 1;
 }
 
 /* START */

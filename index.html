@@ -75,6 +75,60 @@
                   <use href="./images/icons.svg#close"></use>
                 </svg>
               </button>
+              <strong class="form-title">оставте заявку</strong>
+              <form>
+                <!-- данные поситителя -->
+                <label class="form-group">
+                  <span class="form-modal-label">Имя</span>
+                  <input class="form-modal-input" type="text" name="user-name" minlength="3">
+                  <span class="warning"></span>
+                  <span class="error"></span>
+                  <svg class="form-modal-icon" width="20" height="20">
+                    <use href="./images/symbol3.svg#icon-person"></use>
+                  </svg>
+                </label>
+                <label class="form-group">
+                  <span class="form-modal-label">Телефон</span>
+                  <input class="form-modal-input" type="text" name="user-phone">
+                  <span class="warning"></span>
+                  <span class="error"></span>
+                  <svg class="form-modal-icon" width="20" height="20">
+                    <use href="./images/symbol3.svg#icon-phone"></use>
+                  </svg>
+                </label>
+                <label class="form-group">
+                  <span class="form-modal-label">Почта</span>
+                  <input class="form-modal-input" type="text" name="user-mail" width="20" height="20">
+                  <span class="warning"></span>
+                  <span class="error"></span>
+                  <svg class="form-modal-icon" width="20" height="20">
+                    <use href="./images/symbol3.svg#icon-email"></use>
+                  </svg>
+                </label>
+                <!-- тип стрижки -->
+                <div class="form-pay-type">
+                  <label class="form-type-group">
+                    <input type="radio">
+                    <svg class="form-pay-option">
+                      <use href=""></use>
+                    </svg>
+                  </label>
+                  <span class="form-pay-group">
+                    <input type="radio">
+                    <svg class="form-pay-option">
+                      <use href=""></use>
+                    </svg>
+                  </span>
+                  <!-- Политика приватности -->
+                  <label class="form-policy-group">
+                    <input type="checkbox">
+                    <span class="custom-checkbox">
+                    </span>
+                    <span class="form-policy-desk">Соглашаюсь с политикой использования</span>
+                  </label>
+                </label>
+                <button class="btn btn-mode-light submit-btn" type="submit">Отправить форму</button>
+              </form>
             </div>
           </div>
         </div>
